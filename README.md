@@ -8,19 +8,16 @@ semantic analysis using word2vector, doc2vector and other method. mainly for tex
 ```
 unzip dataset/me_train.zip
 python read_data.py
-
 ```
 
 #### train for w2v and d2v
 ```
 python word2vector.py
 python doc2vector.py
-
 ```
 
 #### test for text similarity use word2vector
 ```
 python sample.py
 python shottext.py
-
 ```
