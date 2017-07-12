@@ -15,8 +15,8 @@ class ResultInfo(object):
 
 
 target = "./dataset/target.txt"
-model = "./model/w2v/w2v.mod"
-model_d = './model/d2v/model_new.doc2vec'
+model = "./model/w2v.mod"
+model_d = './model/model_new.doc2vec'
 
 model_w2v = Word2Vec.load(model)
 model_d2v = Doc2Vec.load(model_d)
