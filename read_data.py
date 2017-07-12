@@ -9,9 +9,10 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 
 data_set = "./dataset/me_train.json"
-target = "./dataset/train_questions.txt"
+target = "./dataset/train_questions_with_evidence.txt"
 stopwords_dict = "./dataset/stop_words_ch.txt"
 
+with_evidence = False
 
 def rm_stopwords(file_path, word_dict):
     """

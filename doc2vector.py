@@ -9,7 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-data_set = "./dataset/train_questions.txt"
+data_set = "./dataset/train_questions_with_evidence.txt"
 
 def read_corpus(fname, tokens_only=False):
     with smart_open.smart_open(fname, encoding="utf-8") as f:
