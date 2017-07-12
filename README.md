@@ -5,14 +5,22 @@ semantic analysis using word2vector, doc2vector and other method. mainly for tex
 ### useage
 
 #### data prepare
-- unzip dataset/me_train.zip
-- run read_data.py
+```
+unzip dataset/me_train.zip
+python read_data.py
 
-#### train
-- run word2vector.py for word2vector train.
-- run doc2vector.py for doc2vector train.
+```
 
-#### test
-- run sample.py to genarate test samples.
-- run shottext.py to test sentences similarity.
+#### train for w2v and d2v
+```
+python word2vector.py
+python doc2vector.py
 
+```
+
+#### test for text similarity use word2vector
+```
+python sample.py
+python shottext.py
+
+```
