@@ -12,6 +12,7 @@ python read_data.py
 
 #### train for w2v and d2v
 ```
+mkdir model
 python word2vector.py
 python doc2vector.py
 ```
