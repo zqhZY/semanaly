@@ -12,7 +12,8 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 sentences= LineSentence("./dataset/train_questions_with_evidence.txt")
 
-model = Word2Vec(sentences, min_count=1, iter=1000)
+model = Word2Vec(sentences ,min_count=1, iter=1000)
+model.train(sentences, epochs=1000)
 
 model.save("./model/w2v.mod")
 model_loaded = Word2Vec.load("./model/w2v.mod")
