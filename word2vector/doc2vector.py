@@ -9,7 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-data_set = "./dataset/train_questions_with_evidence.txt"
+data_set = "../dataset/train_questions_with_evidence.txt"
 
 def read_corpus(fname, tokens_only=False):
     with smart_open.smart_open(fname, encoding="utf-8") as f:
@@ -32,7 +32,7 @@ model.train(train_data, total_examples=model.corpus_count, epochs=1000)
 # # # store the model to mmap-able files
 # model.save('./model/model_new.doc2vec')
 # load the model back
-model_loaded = Doc2Vec.load('./model/model_new.doc2vec')
+model_loaded = Doc2Vec.load('../model/model_new.doc2vec')
 #
 # print model_loaded.infer_vector([u'消费者', u'消费者'])
 doc_sims = model_loaded.docvecs.most_similar([2])
