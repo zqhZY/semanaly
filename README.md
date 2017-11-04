@@ -32,3 +32,5 @@ python lstm.py
 python shottext_lstm.py
 ```
 
+### mobile_classify
+text classify for china mobile data set
