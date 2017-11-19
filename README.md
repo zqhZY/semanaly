@@ -32,5 +32,9 @@ python lstm.py
 python shottext_lstm.py
 ```
 
-### mobile_classify
-text classify for china mobile data set
+### textclassfier
+- demo text classfier using word2vector、cnn、lstm implemented by pytorch.
+- kfold implemented for train
+
+### tools
+tools for data preprocess
